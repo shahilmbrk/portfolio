@@ -844,8 +844,9 @@
 
         .projects-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-            gap: 1.5rem;
+            grid-template-columns:repeat(2, minmax(0,1fr));
+            gap:2rem;
+            align-items:stretch;
         }
 
         .project-card {
@@ -858,6 +859,7 @@
             transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
             position: relative;
             overflow: hidden;
+            height:100%;
         }
 
         .project-card::after {
@@ -2127,12 +2129,9 @@
                             <li>Task, goals and notes management</li>
                             <li>Modern responsive dashboard interface</li>
                             <li>Organized productivity workspace</li>
-                            <li>Clean Flask-based web architecture</li>
                         </ul>
                     
                         <div class="project-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">Flask</span>
                             <span class="tag">JavaScript</span>
                             <span class="tag">HTML/CSS</span>
                         </div>
@@ -2147,7 +2146,7 @@
                             </a>
                         </div>
                     </div>
-                                <div class="project-card reveal reveal-delay-2" data-tags="python,web">
+                    <div class="project-card reveal reveal-delay-2" data-tags="python,web">
                         <div class="project-year">2026 &nbsp;·&nbsp; Web Application</div>
                     
                         <h3 class="project-title">Job Application Tracker</h3>
@@ -2179,6 +2178,48 @@
                                 </svg>
                                 GitHub
                             </a>
+                        </div>
+                    </div>
+                    <div class="project-card reveal" data-tags="web,python">
+                        <div class="project-year">2026 &nbsp;·&nbsp; Mini Web App</div>
+                    
+                        <h3 class="project-title">Coin Toss Simulator</h3>
+                    
+                        <p class="project-desc">
+                            A simple interactive web application that simulates a fair coin toss with smooth animations and instant
+                            random results.
+                        </p>
+                    
+                        <ul class="project-features">
+                            <li>Random Heads / Tails generation</li>
+                            <li>Interactive coin flip animation</li>
+                            <li>Responsive web interface</li>
+                        </ul>
+                    
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">HTML/CSS</span>
+                        </div>
+                    
+                        <div class="project-btns">
+                    
+                            <a href="https://github.com/shahilmbrk/Coin-Toss"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="proj-btn">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387..." />
+                                </svg>
+                                GitHub
+                            </a>
+                    
+                            <a href="https://cointoss-hgq0.onrender.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="proj-btn primary">
+                                Launch Project
+                            </a>
+                    
                         </div>
                     </div>
     </section>
@@ -2327,7 +2368,7 @@
             <div class="ach-grid" style="margin-top:3rem">
                 <div class="ach-card reveal">
                     <div class="ach-icon">🏗️</div>
-                    <div class="ach-num counter" data-target="2">0</div>
+                    <div class="ach-num counter" data-target="6">0</div>
                     <div class="ach-label">Projects Completed</div>
                 </div>
                 <div class="ach-card reveal reveal-delay-1">
@@ -2359,7 +2400,7 @@
             </p>
             <div class="resume-stats reveal">
                 <div class="rstat">
-                    <div class="rstat-num">2</div>
+                    <div class="rstat-num">6</div>
                     <div class="rstat-label">Projects</div>
                 </div>
                 <div class="rstat">
